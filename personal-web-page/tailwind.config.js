@@ -4,20 +4,29 @@ export default {
   theme: {
     extend: {
       screens: {
-        'mobile': '300px',      // Mobile breakpoint
-        'tablet': '933px',      // Tablet breakpoint
-        'laptop': '1280px',     // Laptop breakpoint
-        'desktop': '1920px',    // Desktop breakpoint
-        'xl': '2560px',         // Extra-large breakpoint
+        mobile: '300px', // Mobile breakpoint
+        tablet: '933px', // Tablet breakpoint
+        laptop: '1280px', // Laptop breakpoint
+        desktop: '1920px', // Desktop breakpoint
+        xl: '2560px', // Extra-large breakpoint
       },
       colors: {
-        'text': '#9e3841', // Custom text color
-        'bg': '#F4C3C9', // Custom text color
-        'pur': '#B17BAA', // Custom text color
-        'gran': '#7C2430', // Custom text color
+        text: '#9e3841', // Custom text color
+        bg: '#F4C3C9', // Custom text color
+        pur: '#B17BAA', // Custom text color
+        gran: '#7C2430', // Custom text color
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'], // Example for Google Fonts
+      },
+      keyframes: {
+        'slide-in': {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'slide-in': 'slide-in 1.5s ease-out',
       },
     },
   },
