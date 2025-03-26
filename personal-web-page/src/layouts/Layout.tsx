@@ -7,7 +7,7 @@ type LayoutProps = {
 
 const Layout = ({ children }) => {
   return (
-    <div className='bg-black'>
+    <div className="bg-black overflow-x-hidden overflow-hidden">
       {children}
     </div>
   );

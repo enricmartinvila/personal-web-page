@@ -1,0 +1,1 @@
+export const description = "Soy un programador junior con experiencia en diferentes tecnologías y lenguajes de programación, como JavaScript, Express, sql. Disfruto del trabajo en equipo y siempre estoy buscando formas de mejorar y aprender. Me adapto rápidamente a nuevos entornos y estoy dispuesto a crecer junto a mis compañeros de equipo.";
