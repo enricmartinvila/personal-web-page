@@ -19,19 +19,32 @@ const MainText = () => {
   const scale = Math.max(1 - scrollY / 1000, 0.5); // Shrink as you scroll down
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <div
-        className="px-6 laptop:px-0 flex-col flex items-center justify-center"
-        style={{
-          opacity: opacity,
-          transform: `scale(${scale})`,
-          transition: 'opacity 0.1s, transform 0.1s',
-        }}
-      >
-        <h1 className="text-5xl font-bold text-white">Enric Martin Vila</h1>
-        <h1 className="text-5xl font-bold text-gray-400">Frontend Developer</h1>
+    <>
+      {opacity === 0 && (
+        // Display the image when the text is fully invisible
+        <img
+          src="./images/logopersonal.webp"
+          alt="Personal Logo"
+          className="w-56 fixed top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto"
+        />
+      )}
+
+      <div className="flex h-screen w-screen items-center justify-center">
+        <div
+          className="px-6 laptop:px-0 flex-col flex items-center justify-center"
+          style={{
+            opacity: opacity,
+            transform: `scale(${scale})`,
+            transition: 'opacity 0.1s, transform 0.1s',
+          }}
+        >
+          <h1 className="text-7xl font-bold text-white">Enric Martin Vila</h1>
+          <h1 className="text-7xl font-bold text-gray-400">
+            Frontend Developer
+          </h1>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

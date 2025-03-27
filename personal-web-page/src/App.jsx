@@ -7,6 +7,7 @@ import Card from './components/EsplaiCard';
 import Navbar from './components/navbar';
 import CardsWrapper from './components/CardsWrapper';
 import PersonalLogo from './components/PersonalLogo';
+import ScrollDownButton from './components/Scrolldown';
 
 function App() {
   // const [activeSection, setActiveSection] = useState('home');
@@ -41,6 +42,8 @@ function App() {
   return (
     <Layout>
       {/* <PersonalLogo /> */}
+      
+      <ScrollDownButton />
       <Navbar />
       <MainText />
       <CardsWrapper />

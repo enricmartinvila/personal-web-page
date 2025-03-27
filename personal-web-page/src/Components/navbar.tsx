@@ -17,8 +17,8 @@ export default function Navbar({
   scrollToSection,
 }: NavbarProps) {
   return (
-    <div className="fixed top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
-      <nav className="w-fit h-14 rounded-full items-center shadow-md px-4  flex justify-center bg-stone-900 gap-3">
+    <div className="fixed top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
+      <nav className="w-fit py-2 rounded-full items-center shadow-md px-4 flex justify-center bg-stone-900 gap-2.5">
         {sections.map(({ name, quantity }) => (
           <button
             key={name}
