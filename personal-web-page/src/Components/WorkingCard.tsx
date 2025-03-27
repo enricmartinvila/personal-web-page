@@ -14,7 +14,7 @@ const WorkingCard = () => {
       </div>
       <div className="flex flex-row justify-between py-4">
         <p className="text-white font-medium text-2xl">----- ------</p>
-        <DateRange startDate="xx-xx-xxxx" endDate="xx-xx-xxxx" />
+        <DateRange startDate="xx, xxxx"  />
       </div>
     </div>
   );

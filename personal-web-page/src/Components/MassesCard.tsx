@@ -1,5 +1,6 @@
 import React from "react";
 import DateRange from "./DateRange";
+import { ReactIcon } from "./ReactIcon";
 //
 const MassesCard = () => {
   return (
@@ -9,13 +10,16 @@ const MassesCard = () => {
         <h1 className=' absolute top-4 left-4 w-full text-white text-3xl font-semibold'>
           Cal Masses 
         </h1>
-        <img src="./images/logomasses.png" alt="" className="w-44 tablet:w-64  desktop:w-96" />
+        <img src="./images/logomasses.png" alt="" className="w-44 tablet:w-64  desktop:w-72" />
       </div>
     </div>
     <div className="flex flex-row justify-between py-4">
-      <p className="text-white font-medium text-2xl">Web App</p>
-      <DateRange startDate="Jan 20, 2022" endDate="Oct 10, 2025" />
-    </div>
+        <div className='flex items-center justify-center gap-2'>
+          <p className="text-white font-medium text-2xl">Web App</p>
+          <ReactIcon className='size-7' />
+        </div>
+        <DateRange startDate="January, 2024" />
+      </div>
   </div>
   );
 };
