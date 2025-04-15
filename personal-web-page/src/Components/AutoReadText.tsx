@@ -24,7 +24,7 @@ const AutoReadText = ({ text }: AutoReadTextProps) => {
     <>
       <div
         className=" px-12 tablet:px-24 laptop:px-32 desktop:px-56 xl:px-52 py-14"
-        id="cards-targets"
+        id=""
       >
         <div className="flex flex-col py-4 gap-y-4">
           <h1 className="text-5xl text-white font-bold">About</h1>

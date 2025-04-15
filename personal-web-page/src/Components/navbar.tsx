@@ -19,7 +19,7 @@ export default function Navbar({
   return (
     <div className="fixed top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
       <nav className="w-fit py-2 rounded-full items-center shadow-md px-4 flex justify-center bg-stone-900 gap-2.5">
-        {sections.map(({ name, quantity }) => (
+        {sections.map(({ name }) => (
           <button
             key={name}
             onClick={() => scrollToSection(name)}
@@ -28,11 +28,11 @@ export default function Navbar({
             }`}
           >
             {name.charAt(0).toUpperCase() + name.slice(1)}
-            {quantity > 0 && (
+            {/* {quantity > 0 && (
               <span className="absolute top-1 -right-0 mt-0.5 mr-1 w-4 h-4 bg-red-500 text-white text-xs flex items-center justify-center rounded-full">
                 {quantity}
               </span>
-            )}
+            )} */}
           </button>
         ))}
       </nav>

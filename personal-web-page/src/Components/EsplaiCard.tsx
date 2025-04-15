@@ -4,7 +4,7 @@ import { ReactIcon } from './ReactIcon';
 
 const EsplaiCard = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col cursor-pointer group">
       <div className="w-full aspect-square rounded-lg bg-gradient-to-br from-[#e6a2ab] to-[#dd853e]">
         <div className="relative size-full flex flex-col items-center justify-center p-4 ">
           <h1 className=" absolute top-4 left-4 w-full text-white text-3xl font-semibold">
@@ -13,13 +13,13 @@ const EsplaiCard = () => {
           <img
             src="./images/logocristu.jpeg"
             alt=""
-            className=" size-24 tablet:size-44  desktop:size-56"
+            className=" size-24 tablet:size-44  desktop:size-56 transform group-hover:scale-105 transition-transform" 
           />
         </div>
       </div>
       <div className="flex flex-row justify-between py-4">
         <div className='flex items-center justify-center gap-2'>
-          <p className="text-white font-medium text-2xl">Web App</p>
+          <p className="text-white font-medium text-2xl">Web</p>
           <ReactIcon className='size-7' />
         </div>
         <DateRange startDate="June, 2024" />

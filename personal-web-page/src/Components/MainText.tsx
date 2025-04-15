@@ -29,7 +29,7 @@ const MainText = () => {
         />
       )}
 
-      <div className="flex h-screen w-screen items-center justify-center">
+      <div className="flex h-screen w-screen items-center justify-center" id='home'>
         <div
           className="px-6 laptop:px-0 flex-col flex items-center justify-center"
           style={{
